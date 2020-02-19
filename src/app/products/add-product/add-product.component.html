@@ -1,0 +1,71 @@
+<div class="container">
+  <h3> Employee Details</h3>
+    <form #addProduct="ngForm" (ngSubmit)="onClickSubmit(addProduct.value)">
+      <div class="form-group">
+        <label for="inputName">Name</label>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Enter Name"
+          name="name"
+          ngModel
+        />
+      </div>
+      <div class="form-group">
+        <label for="inputPrice">ID</label>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Enter Price"
+          name="id"
+          ngModel
+        />
+      </div>
+      <div class="form-group">
+        <label for="inputDescription">departmentId</label>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Enter Department ID "
+          name="departmentId"
+          ngModel
+        />
+      </div>
+      <div class="form-group">
+        <label for="inputDescription">age</label>
+        <input
+          type="number"
+          class="form-control"
+          placeholder="Enter AGE"
+          name="age"
+          ngModel
+        />
+      </div>
+      <div class="form-group">
+        <label for="inputDescription">organizationId</label>
+        <input
+          type="text"
+          class="form-control"
+          id="inputDescription"
+          placeholder="Enter organizationId"
+          name="organizationId"
+          ngModel
+        />
+      </div>
+      <div class="form-group">
+        <label for="inputDescription">position</label>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Enter position"
+          name="position"
+          ngModel
+        />
+      </div>
+  
+      <button type="submit" class="btn btn-primary">Add Employee</button>
+      <button type="button" routerLink="/" class="btn btn-primary ml-3" >
+        Cancel
+      </button>
+    </form>
+  </div>

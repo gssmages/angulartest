@@ -1,0 +1,13 @@
+<div class="container">
+    <a routerLink="/addproduct">Add Employee</a>
+    <div class="card" style="margin-bottom:10px;box-shadow: 0 0 4px #999;" *ngFor="let item of emp">
+      <div class="card-body text-center">
+        <h5 class="card-title">{{ item.name }}</h5><!-- 
+        <p class="card-text">{{ item.age }}</p>
+        <p class="card-text">{{ item.position }}</p>
+        <p class="card-text">{{ item.departmentId }}</p>
+        <p class="card-text">{{ item.organizationId }}</p> -->
+        <a (click)="getProductDetail(item)" class="btn btn-primary text-light" >Detail</a>
+      </div>
+    </div>
+  </div>
